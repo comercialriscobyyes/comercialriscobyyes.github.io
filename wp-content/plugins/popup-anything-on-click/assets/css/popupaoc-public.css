@@ -18,7 +18,6 @@
 .paoc-popup-overlay.custombox-open.custombox-overlay{opacity: 1; z-index: 100000;}
 .custombox-open.custombox-content{z-index: 100002;}
 .custombox-content>*{max-height: inherit !important;}
-.custombox-overlay:empty{display: block;}
 .paoc-popup iframe{width: 100%;}
 .paoc-popup img{max-width: 100%; height: auto;}
 .paoc-iframe-wrap{position: relative; overflow: hidden; padding-top: 56.25%;}
@@ -49,7 +48,12 @@
 .paoc-close-popup:hover{background-color: #000000;}
 .paoc-popup textarea{resize: vertical;}
 
-/* Ninja Form CSS */
+/* Common Conflict CSS */
+body.custombox-lock{height: auto;}
+.custombox-overlay:empty{display: block;}
+.pac-container{z-index: 100003;}
+.paoc-popup .nf-form-cont{text-align: left;}
+.paoc-popup .nf-form-hp{display: none;}
 .flatpickr-calendar.open,
 body div#ui-datepicker-div[style]{z-index: 999999 !important;}
 
